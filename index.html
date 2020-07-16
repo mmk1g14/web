@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>Md Mosaddek Khan</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
+    background-color: #5E6566;
+    color: #fff;
+    padding: 75px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #f4511e;
+    font-size: 50px;
+  }
+  .logo {
+    color: #f4511e;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+  }
+  .carousel-indicators li {
+    border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+    background-color: #f4511e;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #f4511e; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #f4511e !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #ABB2B9;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 1px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #121111 !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #5E6566;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  
+  .center{
+    text-align: center;
+        }
+  .right{
+    text-align: right;
+    
+    }  
+  .left{
+    text-align: left;
+        }
+		
+  table, th, td {
+  border: 0px solid black;
+  border-collapse: collapse;
+   }
+    th, td {
+   padding: 5px;
+  }	
+  
+   th1 {
+   padding: 5px;
+  text-align: right;
+  }	
+  
+  
+ 
+  
+  pre { 
+                
+                background-color: #5E6566;
+				color: #FFFF; 
+                margin: 0px; 
+				 border: 0px;
+				   font-size: 18px;
+
+            }  
+		
+</style>
+  
+  
+  
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Md. Mosaddek Khan (Sajeeb)</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#recent">Recent News</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#people">People</a></li>
+		<li><a href="#cail">CAIL Research Group</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+ 
+ <table style="width:90%">
+    <tr>
+    <th style="text-align:right">
+	<pre><span style="font-weight:bold; ">
+Dr. Md Mosaddek Khan
+Assistant Professor
+Department of Computer Science and Engineering
+University of Dhaka, Bangladesh
+
+Email: mosaddek[at]du.ac.bd
+Web: <a href="http://www.mmkhansajeeb.com/">http://www.mmkhansajeeb.com/</a>
+Profile: <a href="https://scholar.google.com/citations?user=WCMwBe4AAAAJ&hl=en">[Google Scholar] </a><a href="https://dblp.org/pers/k/Khan:Md=_Mosaddek.html">[DBLP] </a><a href="http://www.mmkhansajeeb.com/">[CV]</a>
+ </span></pre></th>
+        <th>
+       <img src="photo.jpg" class="img-circle" alt="Bird" width="150" height="150">
+ </th>
+  </tr>
+  </table>    
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+  <div class="col-sm-3">
+    
+    </div>
+  
+  <div class="col-sm-6">
+          <h2>About me</h2>
+		  <br>
+      <p>I am an Assistant Professor at the Department of Computer Science and Engineering, University of Dhaka, 
+	    Bangladesh since April 2019. Before that, I served the same department as a Lecturer. I also intiate and direct a research 
+		group named Cognitive Agents and Interaction Lab (CAIL) at the University of Dhaka. 	
+	  </p>
+	  <p> 		
+
+        I have receied my PhD in Computer Science from the University of Southampton, UK in 2018 under the supervision of 
+		 Prof. Nick Jennings CB, FREng and Dr Long Tran-Thanh. Prior to this, I have completed my MS and BSc in Computer 
+		Science and Engineering from the University of Dhaka in 2012 and 2010, respectively. During the time, I was supervised by 
+		Prof. Md. Mamun-or-Rashid.
+	  </p>
+
+      
+	  <p> 		
+
+    I am particularly interested in conducting research in the field of Distributed Artificial Intelligence, often recognised as Multi-Agent Systems.
+    Spefically, my research focuses on developing distributed decision making algorithms to deal with constraints in cooperative or competitive multi-agent systems. 
+	I also explore the real-world impact of research and have been involved with deployment of such systems in domains such as disaster response, citizen science, etc.   
+   	
+
+		
+	  </p><br>
+	  
+	  
+    	</div>
+  </div>
+</div>
+
+<div id="recent" class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-3">
+  
+    </div>
+    <div class="col-sm-6">
+      <h2>Recent News</h2><br>
+	  
+	  <ul>
+  <li> <h5>April &#39;2020:  Our paper titled  "<i>Learning Optimal Temperature Region for Solving Mixed Integer Functional DCOPs" </i> accepted in IJCAI 2020.</h5></li>
+    <li><h5>March &#39;2020:  Start directing the CAIL Research Group at the University of Dhaka. </h4></li>
+	 <li><h5>March &#39;2020:  Received a ICT innovation grant to work on Security Games! </h4></li>
+	 <li><h5>March &#39;2020:  Started working on a project "mindFlare" with Prof. Md. Mamun-or-Rashid and his team - funded by the ICT division of Bangladesh.  </h5></li>
+	 <li><h5>February &#39;2020: AAMAS 2020 paper "<i>AED: An Anytime Evolutionary DCOP Algorithm"</i> got accepted.  </h5></li>
+	<li><h5>February &#39;2020: AAMAS 2020 paper (Extended Abstract) "<i>C-CoCoA: A Continuous Cooperative Constraint Approximation Algorithm to Solve Functional DCOPs"</i> got accepted.  </h5></li>
+    <li><h5>November &#39;2019: AAAI 2020 paper "<i>A Particle Swarm Based Algorithm for Functional Distributed Constraint Optimization Problems"</i> accepted for publication.  </h5></li>
+	<li><h5>November &#39;2019: AAAI 2020 paper "<i>A Particle Swarm Based Algorithm for Functional Distributed Constraint Optimization Problems"</i> accepted for publication.  </h5></li>
+	<li><h5>April&#39;2019: Joined as an Assistant Professor at the Department of CSE, University of Dhaka.   </h5></li>
+	<li><h5>May &#39;2018: Completed my PhD in Computer Science from the University of Southampton, UK. </h5></li>
+	<li><h5>March &#39;2018: Our paper "<i>Speeding Up GDL-Based Message Passing Algorithms for Large-Scale DCOPs"</i> published in The Computer Journal of Oxford University Press. </h5></li>
+	<li><h5>January &#39;2018: Our paper "<i>A Near-Optimal Node-to-Agent Mapping Heuristic for GDL-based DCOP Algorithms in Multi-Agent Systems"</i> got accepted in AAMAS 2018. </h5></li>
+  <li><h5>January &#39;2018: Our paper "<i>A Generic Domain Pruning Technique for GDL-based DCOP Algorithms in Cooperative Multi-Agent Systems got accepted in AAMAS 2018..</h5></li>
+  
+</ul>  
+
+	  
+      
+      
+	
+
+	</div>
+	
+	
+  </div>
+</div>
+
+
+<!-- Container (About Section) -->
+<div id="publications" class="container-fluid">
+  <div class="row">
+  <div class="col-sm-3">
+    
+    </div>
+  
+  <div class="col-sm-6">
+          <h2>Publications</h2><br>
+		 
+		 <h4>&thinsp; &thinsp; Dissertation</h4>
+		 <ul> 
+     <li><strong>Md. Mosaddek Khan</strong>. &#8220;<a href="https://eprints.soton.ac.uk/421047/" 
+	 target="_blank" rel="noopener noreferrer">Speeding Up GDL-Based Distributed Constraint Optimization Algorithms in Cooperative Multi-agent Systems
+</a>.&#8221; PhD Thesis, University of Southampton, United Kingdom 2018.</li>
+  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+     Supervisors: <a href="https://www.imperial.ac.uk/people/n.jennings" target="_blank" rel="noopener noreferrer">
+	    Professor Nicholas R. Jennings CB, FREng</a> and <a href="https://human-agentlearning.github.io/" target="_blank" rel="noopener noreferrer">
+	    Dr. Long Tran-Thanh</a>.
+
+
+</ul>
+
+ <h4>&thinsp; &thinsp; Research Articles</h4>
+		 <ul> 
+     
+	 <li>S. Mahmud, <strong>M. M. Khan</strong>, M. Choudhury, L. Tran-Thanh and N. R. Jennings. 
+	     &#8220;<a href="https://www.ijcai.org/Proceedings/2020/38" target="_blank" rel="noopener noreferrer">
+	     Learning optimal temperature region for solving mixed integer functional DCOPs</a>.&#8221; In 
+		 <em>Proceedings of the 29th International Joint Conference on Artificial Intelligence (IJCAI)</em>, 
+		 pages 268-275, 2020.</li>
+		 
+		 
+	 <li> M. Choudhury, S. Mahmud and <strong>M. M. Khan</strong>.
+	     &#8220;<a href="https://aaai.org/ojs/index.php/AAAI/article/view/6198" target="_blank" rel="noopener noreferrer">
+	     A particle swarm based algorithm for functional distributed constraint optimization problems</a>.&#8221; In 
+		 <em>Proceedings of the 34th AAAI Conference on Artificial Intelligence (AAAI)</em>, 
+		 pages 7111-7118, 2020.</li>
+
+
+ <li>    S. Mahmud, M. Choudhury, <strong>M. M. Khan</strong>, L. Tran-Thanh and N. R. Jennings. 
+	     &#8220;<a href="https://dl.acm.org/doi/abs/10.5555/3398761.3398859" target="_blank" rel="noopener noreferrer">
+	     AED: An Anytime Evolutionary DCOP Algorithm</a>.&#8221; In 
+		 <em>Proceedings of the 19th International Conference on Autonomous Agents and MultiAgent Systems (AAMAS)</em>, 
+		 pages 825–833, 2020.</li>	
+
+ <li>    A. Sarker, A. B. Arif, M. Choudhury and <strong>M. M. Khan</strong>. 
+	     &#8220;<a href="https://dl.acm.org/doi/10.5555/3398761.3399051" target="_blank" rel="noopener noreferrer">
+	     C-CoCoA: A Continuous Cooperative Constraint Approximation Algorithm to Solve Functional DCOPs</a>.&#8221; In 
+		 <em>Proceedings of the 19th International Conference on Autonomous Agents and MultiAgent Systems (AAMAS)</em>, 
+		 pages 1990–1992, 2020.</li>
+		 
+
+<li>    M. Rashik, M. M Rahman, M. Mamun-or Rashid and <strong>M. M. Khan</strong>.
+       &#8220;<a href="https://arxiv.org/abs/1909.06537" target="_blank" rel="noopener noreferrer">
+	   Speeding Up Distributed Pseudo-tree Optimization Procedure with Cross Edge Consistency to Solve DCOPs</a>.&#8221; <em> 
+	   arxiv.org/abs/1909.06537, 2019.</li>
+
+		 
+<li>    M. M. Islam, A. Debnath, T. A. Sayeed, M. M. Rahman, <strong>M. M. Khan</strong>, S. Shatabda and A. Islam. 
+	     &#8220;<a href="https://ieeexplore.ieee.org/document/8971186" target="_blank" rel="noopener noreferrer">
+	     A gray box interpretable visual debugging approach for deep sequence learning model</a>.&#8221; In 
+		 <em>Proceedings of the 2019 IEEE Region 10 Symposium (TENSYMP)</em>, 
+		 pages 825–830, 2019.</li>
+		 
+		 
+<li>    <strong>M. M. Khan</strong>, L. Tran-Thanh, S. D. Ramchurn and N. R. Jennings. 
+       &#8220;<a href="https://academic.oup.com/comjnl/article-abstract/61/11/1639/4942084" target="_blank" rel="noopener noreferrer">
+	   Speeding Up GDL-Based Message Passing Algorithms for Large-scale Dcops</a>.&#8221; <em>
+	   The Computer Journal</em>, 61(11), pages 1639-1666, 2018.: Oxford University Press.</li>
+
+
+		 
+ <li>    <strong>M. M. Khan</strong>, L. Tran-Thanh and N. R. Jennings. 
+	     &#8220;<a href="https://dl.acm.org/doi/10.5555/3237383.3237937" target="_blank" rel="noopener noreferrer">
+	     A Generic Domain Pruning Technique for GDL-Based DCOP Algorithms in Cooperative Multi-Agent Systems</a>.&#8221; In 
+		 <em>Proceedings of the 17th International Conference on Autonomous Agents and MultiAgent Systems (AAMAS)</em>, 
+		 pages 1595–1603, 2018.</li>
+
+ <li>    <strong>M. M. Khan</strong>, L. Tran-Thanh, W. Yeoh and N. R. Jennings. 
+	     &#8220;<a href="https://dl.acm.org/doi/10.5555/3237383.3237938" target="_blank" rel="noopener noreferrer">
+	     A Near-Optimal Node-to-Agent Mapping Heuristic for GDL-Based DCOP Algorithms in Multi-Agent Systems</a>.&#8221; In 
+		 <em>Proceedings of the 17th International Conference on Autonomous Agents and MultiAgent Systems (AAMAS)</em>, 
+		 pages 1595–1603, 2018.</li>
+
+ 
+ <li>    <strong>M. M. Khan</strong>,  S. D. Ramchurn, L. Tran-Thanh and N. R. Jennings. 
+	     &#8220;<a href="https://www.cs.nmsu.edu/~wyeoh/OPTMAS2016/" target="_blank" rel="noopener noreferrer">
+	     Speeding Up GDL-Based Message Passing Algorithms for Large-scale Dcops</a>.&#8221; In 
+		 <em>International Workshop on Optimization in Multi-Agent Systems  (OPTMAS’2016)</em>, 
+		 pages 1–15, 2016.</li>
+		 
+		 
+ <li>    <strong>M. M. Khan</strong> and M. Mamun-or Rashid. 
+	     &#8220;<a href="https://ieeexplore.ieee.org/document/5723915" target="_blank" rel="noopener noreferrer">
+	     A Stable Clustering Method for Efficient Geographic Routing in Mobile Ad-hoc Networks</a>.&#8221; In 
+		 <em>Proceedings of the 13th International Conference on Computer and Information Technology (ICCIT),</em> 
+		 pages 539–544, 2010.</li>
+		 
+		 
+ <li>    <strong>M. M. Khan</strong>, M. T. Hamid, and S. K. Uddin. 
+	     &#8220;<a href="https://ieeexplore.ieee.org/document/5723913" target="_blank" rel="noopener noreferrer">
+	     A Cyclic Quorum Based Multi-channel MAC Protocol with Layered Approach for Mobile Ad-hoc Networks</a>.&#8221; In 
+		 <em>Proceedings of the 13th International Conference on Computer and Information Technology (ICCIT),</em> 
+		 pages 527–532, 2010.</li>
+		 
+		 
+	 
+</ul>
+	  
+	  
+    	</div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Container (Portfolio Section) -->
+<div id="teaching" class="container-fluid text-center bg-grey">
+  <h2>Teaching</h2><br>
+  <h4>will update soon</h4>
+
+  
+  
+  
+</div>
+
+<!-- Container (Pricing Section) -->
+<div id="people" class="container-fluid">
+  <div class="text-center">
+    <h2>Team Members</h2>
+    <h4>will update soon</h4>
+  </div>
+  
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="cail" class="container-fluid bg-grey">
+  <h2 class="text-center">Cognitive Agents and Interation Lab</h2>
+  
+----
+  
+  
+</div>
+
+<!-- Image of location/map -->
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>@Sajeeb</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
