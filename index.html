@@ -10,7 +10,18 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+      if (localStorage.getItem("visitCount")) {
+        var visitCount = parseInt(localStorage.getItem("visitCount")) + 1;
+        localStorage.setItem("visitCount", visitCount);
+      } else {
+        localStorage.setItem("visitCount", 1);
+      }
+    </script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  
+  
   <style>
   body {
     font: 400 15px Lato, sans-serif;
@@ -357,7 +368,7 @@ Profile: <a href="https://scholar.google.com/citations?user=WCMwBe4AAAAJ&hl=en" 
   
     </div>
     <div class="col-sm-6">
-      <h2>Recent News</h2><br>
+      <h2>Recent News (Last Updated: May 2022)</h2><br>
 	  
 	  <ul>
 	   <li><h5>May&#39;2022: Our paper titled "<i>On evaluation of patrolling and signalling schemes to prevent poaching in green security games"</i> published in Intelligent Systems with Applications Journal of Elsevier.  </h5></li>
@@ -558,6 +569,8 @@ Profile: <a href="https://scholar.google.com/citations?user=WCMwBe4AAAAJ&hl=en" 
 <ul>
 <li> <b>Department of Computer Science and Engineering, University of Dhaka, Bangladesh</b>
 <ul>
+<li style="margin: 0px 0px 0px 0px;">CSE 2101: Data Structures and Algorithms (Spring 2023)</li>
+<li style="margin: 0px 0px 0px 0px;">CSE 2202: Design and Analysis of Algorithms – I (Fall 2022)</li>
 <li style="margin: 0px 0px 0px 0px;">CSE 519: Neural Networks (MS, Spring 2021)</li>
 <li style="margin: 0px 0px 0px 0px;">CSE 4129: Parallel and Distributed Systems (Fall 2020)</li>
 <li style="margin: 0px 0px 0px 0px;">CSE 4101: Artificial Intelligence (Spring 2019, Spring 2020)</li>
@@ -575,7 +588,8 @@ Profile: <a href="https://scholar.google.com/citations?user=WCMwBe4AAAAJ&hl=en" 
 
 <li> <b> Department of Electrical and Computer Engineering, North South University, Bangladesh</b>
 <ul>
-<li style="margin: 0px 0px 0px 0px;">CSE 273: Theory of Computation  (Spring 2021, Fall 2021) - as an adjunct faculty</li>
+<li style="margin: 0px 0px 0px 0px;">CSE 273: Theory of Computation  (Spring 2021, Fall 2021, Fall 2022, Spring 2023) - as an adjunct faculty</li>
+<li style="margin: 0px 0px 0px 0px;">CSE 425: Programming Language Concepts (Fall 2022) - as an adjunct faculty</li>
 <li style="margin: 0px 0px 0px 0px;">CSE 473: Theory of Computation  (Fall 2019) - as an adjunct faculty</li>
 <li style="margin: 0px 0px 0px 0px;">CSE 373: Software Engineering  (Summer 2019) - as an adjunct faculty</li>
 <li style="margin: 0px 0px 0px 0px;">CSE 327: Design and Analysis of Algorithms  (Summer 2019) - as an adjunct faculty</li>
@@ -642,7 +656,10 @@ Profile: <a href="https://scholar.google.com/citations?user=WCMwBe4AAAAJ&hl=en" 
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p>@Sajeeb</p>
+      
+
+  <p>@Sajeeb <script>document.write(localStorage.getItem("visitCount"))</script></p>
+ 
 </footer>
 
 <script>
