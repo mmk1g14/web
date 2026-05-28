@@ -1,703 +1,911 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
- 
-  <title>Md Mosaddek Khan</title>
-  <link rel="icon" href="favicon.ico">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script>
-      if (localStorage.getItem("visitCount")) {
-        var visitCount = parseInt(localStorage.getItem("visitCount")) + 1;
-        localStorage.setItem("visitCount", visitCount);
-      } else {
-        localStorage.setItem("visitCount", 1);
-      }
-    </script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  
-  
-  
-  <style>
-  body {
-    font: 400 15px Lato, sans-serif;
-    line-height: 1.8;
-    color: #818181;
-  }
-  h2 {
-    font-size: 24px;
-    text-transform: uppercase;
-    color: #303030;
-    font-weight: 600;
-    margin-bottom: 30px;
-  }
-  h4 {
-    font-size: 19px;
-    line-height: 1.375em;
-    color: #303030;
-    font-weight: 400;
-    margin-bottom: 30px;
-  }  
-  .jumbotron {
-    background-color: #5E6566;
-    color: #fff;
-    padding: 75px 25px;
-    font-family: Montserrat, sans-serif;
-  }
-  .container-fluid {
-    padding: 60px 50px;
-  }
-  .bg-grey {
-    background-color: #f6f6f6;
-  }
-  .logo-small {
-    color: #f4511e;
-    font-size: 50px;
-  }
-  .logo {
-    color: #f4511e;
-    font-size: 200px;
-  }
-  .thumbnail {
-    padding: 0 0 15px 0;
-    border: none;
-    border-radius: 0;
-  }
-  .thumbnail img {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 10px;
-  }
-  .carousel-control.right, .carousel-control.left {
-    background-image: none;
-    color: #f4511e;
-  }
-  .carousel-indicators li {
-    border-color: #f4511e;
-  }
-  .carousel-indicators li.active {
-    background-color: #f4511e;
-  }
-  .item h4 {
-    font-size: 19px;
-    line-height: 1.375em;
-    font-weight: 400;
-    font-style: italic;
-    margin: 70px 0;
-  }
-  .item span {
-    font-style: normal;
-  }
-  .panel {
-    border: 1px solid #f4511e; 
-    border-radius:0 !important;
-    transition: box-shadow 0.5s;
-  }
-  .panel:hover {
-    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-  }
-  .panel-footer .btn:hover {
-    border: 1px solid #f4511e;
-    background-color: #fff !important;
-    color: #f4511e;
-  }
-  .panel-heading {
-    color: #fff !important;
-    background-color: #f4511e !important;
-    padding: 25px;
-    border-bottom: 1px solid transparent;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
-  .panel-footer {
-    background-color: white !important;
-  }
-  .panel-footer h3 {
-    font-size: 32px;
-  }
-  .panel-footer h4 {
-    color: #aaa;
-    font-size: 14px;
-  }
-  .panel-footer .btn {
-    margin: 15px 0;
-    background-color: #f4511e;
-    color: #fff;
-  }
-  .navbar {
-    margin-bottom: 0;
-    background-color: #ABB2B9;
-    z-index: 9999;
-    border: 0;
-    font-size: 12px !important;
-    line-height: 1.42857143 !important;
-    letter-spacing: 1px;
-    border-radius: 0;
-    font-family: Montserrat, sans-serif;
-  }
-  .navbar li a, .navbar .navbar-brand {
-    color: #fff !important;
-  }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #121111 !important;
-    background-color: #fff !important;
-  }
-  .navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #fff !important;
-  }
-  footer .glyphicon {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #5E6566;
-  }
-  .slideanim {visibility:hidden;}
-  .slide {
-    animation-name: slide;
-    -webkit-animation-name: slide;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    visibility: visible;
-  }
-  @keyframes slide {
-    0% {
-      opacity: 0;
-      transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
-  @-webkit-keyframes slide {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .col-sm-4 {
-      text-align: center;
-      margin: 25px 0;
-    }
-    .btn-lg {
-      width: 100%;
-      margin-bottom: 35px;
-    }
-  }
-  @media screen and (max-width: 480px) {
-    .logo {
-      font-size: 150px;
-    }
-  }
-  
-  .center{
-    text-align: center;
-        }
-  .right{
-    text-align: right;
-    
-    }  
-  .left{
-    text-align: left;
-        }
-		
-  table, th, td {
-  border: 0px solid black;
-  border-collapse: collapse;
-   }
-    th, td {
-   padding: 5px;
-  }	
-  
-   th1 {
-   padding: 5px;
-  text-align: right;
-  }	
-  
-  
- 
-  
-  pre { 
-                
-                background-color: #5E6566;
-				color: #FFFF; 
-                margin: 0px; 
-				 border: 0px;
-				   font-size: 18px;
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Md Mosaddek Khan - Academic Profile</title>
+    <meta name="description"
+        content="Academic Profile of Dr. Md Mosaddek Khan, Associate Professor, CSE, University of Dhaka.">
+    <link rel="icon" href="favicon.ico">
 
-            }  
+    <!-- Google Fonts: Inter and Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap"
+        rel="stylesheet">
 
-
-  .small {
-  line-height: 1.1;
-}
-		
-</style>
-  
-  
-  
-  </style>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="">Md. Mosaddek Khan (Sajeeb)</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#recent">Recent News</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#teaching">Teaching</a></li>
-        <li><a href="https://cognistorm.ai/">Research Group</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<div class="jumbotron text-center">
-  <div class="row">
-    <div class="col-sm-8" style="background-color: #5E6566;">
-  
-<div class="small">
-<p class="text-right">
-<br>
-Dr. Md Mosaddek Khan<br>
-<small>
-Associate Professor<br>
-Department of Computer Science and Engineering<br>
-University of Dhaka, Bangladesh<br><br>
-Email: mosaddek[at]du.ac.bd<br>
-Web: <a href="http://www.mmkhansajeeb.com/">http://www.mmkhansajeeb.com/</a><br>
-Profile: <a href="https://scholar.google.com/citations?user=IIb6f_4AAAAJ&hl" target="_blank" rel="noopener noreferrer">[Google Scholar] </a><a href="https://dblp.org/pers/k/Khan:Md=_Mosaddek.html" target="_blank" rel="noopener noreferrer" >[DBLP] </a><a href="https://www.csauthors.net/md-mosaddek-khan/">[CSAuthors]</a><br>
-</small>
-</p>
-
-
-
-</div>
-
-   </div>
-    <div class="col-sm-3" style="background-color:#5E6566;">
-	
-	<p class="text-left">
-	
-	<br>
-      <img src="photo.jpg" class="img-circle" alt="Bird" width="150" height="150">    
-	  </p>
-    </div>
-  </div>
- 
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Container (About Section) -->
-<div id="about" class="container-fluid">
-  <div class="row">
-  <div class="col-sm-3">
-    
-    </div>
-    <div class="col-sm-6">
-          <h2>About me</h2>
-		  <br>
-      <p>I am an Associate Professor at the Department of Computer Science and Engineering, University of Dhaka, 
-	    Bangladesh since July 2022. Before that, I served the same department as an Assistant Professor and Lecturer. I also initiate and direct a research 
-		group named Cognitive Agents and Interaction Lab at the University of Dhaka. 	
-	  </p>
-	  <p> 		
-
-        I have received my PhD in Computer Science from the University of Southampton, UK in 2018 under the supervision of 
-		 Prof. Nick Jennings CB, FREng and Dr Long Tran-Thanh. Prior to this, I have completed my MS and BSc in Computer 
-		Science and Engineering from the University of Dhaka in 2012 and 2010, respectively. During the time, I was supervised by 
-		Prof. Md. Mamun-or-Rashid.
-	  </p>
-
-      
-	  <p> 		
-
-    I am particularly interested in conducting research in the field of Distributed Artificial Intelligence, often recognised as Multi-Agent Systems.
-    Specifically, my research focuses on developing distributed decision making algorithms to deal with constraints in cooperative or competitive multi-agent systems. I am also 
-	interested in developing algorithms for different real-world applications by integrating deep learning and Multi-Agent Reinforcement Learning (MARL) methodologies.	
-	
-   	
-
-		
-	  </p><br>
-	  
-	  
-    	</div>
-  </div>
-</div>
-
-<div id="recent" class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-3">
-  
-    </div>
-    <div class="col-sm-6">
-      <h2>Recent News (Last Updated: May 2022)</h2><br>
-	  
-	  <ul>
-	   <li><h5>May&#39;2022: Our paper titled "<i>On evaluation of patrolling and signalling schemes to prevent poaching in green security games"</i> published in Intelligent Systems with Applications Journal of Elsevier.  </h5></li>
-	  <li><h5>February, July&#39;2022: two papers got accepted in IEEE Access Journal.  </h5></li>
-	  <li><h5>January &#39;2022: AAMAS 2022 paper (Extended Abstract) "<i>A Simulation Based Online Planning Algorithm for Multi-Agent Cooperative Environments"</i> got accepted.  </h5></li>
-	  <li><h5>July &#39;2021: IEEE ISPA 2021 paper "<i>Accelerating Message Passing Operation of GDL-Based Constraint Optimization Algorithms Using Multiprocessing"</i> got accepted.  </h5></li>
-	   <li><h5>June &#39;2021:  Received an ICT innovation grant (BDT 1.5M) to work on the deployment of Multi-Agent Deep Reinforcement Learning to solve MAPF problems.</h4></li>
-	   <li><h5>May &#39;2021: Two AAMAS 2021 full papers: "<i>Accelerating Recursive Partition-Based Causal Structure Learning Using An Improved Structure Refinement Approach"</i> and "<i>A Local Search Based Approach to Solve Continuous DCOPs"</i> got published.  </h5></li>
-	  <li> <h5>October &#39;2020:  Our paper "<i>Speeding Up Distributed Pseudo-tree Optimization Procedures with Cross Edge Consistency to Solve DCOPs" </i> published in the Applied Intelligence journal of Springer .</h5></li>
-  <li> <h5>April &#39;2020:  Our paper titled  "<i>Learning Optimal Temperature Region for Solving Mixed Integer Functional DCOPs" </i> accepted in IJCAI 2020.</h5></li>
-    <li><h5>March &#39;2020:  Start directing the Cognitive Agents and Interaction Research Group at the University of Dhaka. </h4></li>
-	 <li><h5>March &#39;2020:  Received an ICT innovation grant to work on Security Games! </h4></li>
-	 <li><h5>March &#39;2020:  Started working on a project "mindFlare" with Prof. Md. Mamun-or-Rashid and his team - funded by the ICT division of Bangladesh.  </h5></li>
-	 <li><h5>February &#39;2020: AAMAS 2020 paper "<i>AED: An Anytime Evolutionary DCOP Algorithm"</i> got accepted.  </h5></li>
-	<li><h5>February &#39;2020: AAMAS 2020 paper (Extended Abstract) "<i>C-CoCoA: A Continuous Cooperative Constraint Approximation Algorithm to Solve Functional DCOPs"</i> got accepted.  </h5></li>
-    <li><h5>November &#39;2019: AAAI 2020 paper "<i>A Particle Swarm Based Algorithm for Functional Distributed Constraint Optimization Problems"</i> accepted for publication.  </h5></li>
-	<li><h5>April&#39;2019: Joined as an Assistant Professor at the Department of CSE, University of Dhaka.   </h5></li>
-	<li><h5>May &#39;2018: Completed my PhD in Computer Science from the University of Southampton, UK. </h5></li>
-	<li><h5>March &#39;2018: Our paper "<i>Speeding Up GDL-Based Message Passing Algorithms for Large-Scale DCOPs"</i> published in The Computer Journal of Oxford University Press. </h5></li>
-	<li><h5>January &#39;2018: Our paper "<i>A Near-Optimal Node-to-Agent Mapping Heuristic for GDL-based DCOP Algorithms in Multi-Agent Systems"</i> got accepted in AAMAS 2018. </h5></li>
-  <li><h5>January &#39;2018: Our paper "<i>A Generic Domain Pruning Technique for GDL-based DCOP Algorithms in Cooperative Multi-Agent Systems got accepted in AAMAS 2018.</h5></li>
-  
-</ul>  
-
-	  
-      
-      
-	
-
-	</div>
-	
-	
-  </div>
-</div>
-
-
-<!-- Container (About Section) -->
-<div id="publications" class="container-fluid">
-  <div class="row">
-  <div class="col-sm-3">
-    
-    </div>
-  
-  <div class="col-sm-6">
-          <h2>Publications</h2><br>
-		 
-		 <h4>&thinsp; &thinsp; Dissertation</h4>
-		 <ul> 
-     <li><strong>Md. Mosaddek Khan</strong>. &#8220;<a href="https://eprints.soton.ac.uk/421047/" 
-	 target="_blank" rel="noopener noreferrer">Speeding Up GDL-Based Distributed Constraint Optimization Algorithms in Cooperative Multi-agent Systems
-</a>.&#8221; PhD Thesis, University of Southampton, United Kingdom 2018.</li>
-  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
-     Supervisors: <a href="https://www.lboro.ac.uk/services/vco/smt/vc-prof-jennings/" target="_blank" rel="noopener noreferrer">
-	    Professor Nicholas R. Jennings CB, FREng</a> and <a href="https://human-agentlearning.github.io/" target="_blank" rel="noopener noreferrer">
-	    Dr. Long Tran-Thanh</a>.
-
-
-</ul>
-
- <h4>&thinsp; &thinsp; Research Articles (Last Updated: December 2021)</h4>
-		 <ul> 
-     
-	 <li>    A. Sarker, M. Choudhury and <strong>M. M. Khan</strong>. 
-	     &#8220;<a href="https://dl.acm.org/doi/10.5555/3463952.3464083" target="_blank" rel="noopener noreferrer">
-	     A Local Search Based Approach to Solve Continuous DCOPs</a>.&#8221; In 
-		 <em>Proceedings of the 20th International Conference on Autonomous Agents and MultiAgent Systems (AAMAS)</em>, 
-		 pages 1127–1135, 2021.</li>	
-
-	 
-	 <li>    M. M. Rahman, A. Rashid, <strong>M. M. Khan</strong>, M. A. Javidan, P Jamshidi and M. Mamun-or-Rashid  
-	     &#8220;<a href="https://dl.acm.org/doi/10.5555/3463952.3464072" target="_blank" rel="noopener noreferrer">
-	     Accelerating Recursive Partition-Based Causal Structure Learning</a>.&#8221; In 
-		 <em>Proceedings of the 20th International Conference on Autonomous Agents and MultiAgent Systems (AAMAS)</em>, 
-		 pages 1028–1036, 2021.</li>	
-	 
-			 
-	  <li>S. A. Zaoad, T. Tanjim, M. Hasan, M. Mamun-or-Rashid, I. A. Almansour,  <strong>M. M. Khan</strong>. 
-       &#8220;<a href="http://www.cloud-conf.net/ispa2021/proc/pdfs/ISPA-BDCloud-SocialCom-SustainCom2021-3mkuIWCJVSdKJpBYM7KEKW/264600a706/264600a706.pdf" target="_blank" rel="noopener noreferrer">
-        Accelerating Message Passing Operation of GDL-Based Constraint Optimization Algorithms Using Multiprocessing</a>.&#8221; 
-        <em>2021 IEEE International Conference on Parallel & Distributed Processing with Applications (ISPA 2021)</em>, pages 706-714, 2021.</li>		 
-
-	  <li>M. Rashik, M. M Rahman, <strong>M. M. Khan</strong>, M. Mamun-or Rashid, L. Tran-Thanh, S. D. Ramchurn and N. R. Jennings. 
-      &#8220;<a href="https://doi.org/10.1007/s10489-020-01860-8" target="_blank" rel="noopener noreferrer">
-    Speeding Up Distributed Pseudo-tree Optimization Procedures with Cross Edge Consistency to Solve DCOPs</a>.&#8221; <em>
-   Applied Intelligence</em>, 51(3) , pages 1733-1746, 2021.: Springer.</li>
-
-
-		  <li>S. Mahmud, <strong>M. M. Khan</strong>, M. Choudhury, L. Tran-Thanh and N. R. Jennings. 
-	     &#8220;<a href="https://www.ijcai.org/Proceedings/2020/38" target="_blank" rel="noopener noreferrer">
-	     Learning optimal temperature region for solving mixed integer functional DCOPs</a>.&#8221; In 
-		 <em>Proceedings of the 29th International Joint Conference on Artificial Intelligence (IJCAI)</em>, 
-		 pages 268-275, 2020.</li>
-		
-
-
-
-	 <li> M. Choudhury, S. Mahmud and <strong>M. M. Khan</strong>.
-	     &#8220;<a href="https://aaai.org/ojs/index.php/AAAI/article/view/6198" target="_blank" rel="noopener noreferrer">
-	     A particle swarm based algorithm for functional distributed constraint optimization problems</a>.&#8221; In 
-		 <em>Proceedings of the 34th AAAI Conference on Artificial Intelligence (AAAI)</em>, 
-		 pages 7111-7118, 2020.</li>
-
-
- <li>    S. Mahmud, M. Choudhury, <strong>M. M. Khan</strong>, L. Tran-Thanh and N. R. Jennings. 
-	     &#8220;<a href="https://dl.acm.org/doi/abs/10.5555/3398761.3398859" target="_blank" rel="noopener noreferrer">
-	     AED: An Anytime Evolutionary DCOP Algorithm</a>.&#8221; In 
-		 <em>Proceedings of the 19th International Conference on Autonomous Agents and MultiAgent Systems (AAMAS)</em>, 
-		 pages 825–833, 2020.</li>	
-
- <li>    A. Sarker, A. B. Arif, M. Choudhury and <strong>M. M. Khan</strong>. 
-	     &#8220;<a href="https://dl.acm.org/doi/10.5555/3398761.3399051" target="_blank" rel="noopener noreferrer">
-	     C-CoCoA: A Continuous Cooperative Constraint Approximation Algorithm to Solve Functional DCOPs</a>.&#8221; In 
-		 <em>Proceedings of the 19th International Conference on Autonomous Agents and MultiAgent Systems (AAMAS)</em>, 
-		 pages 1990–1992, 2020.</li>
-		 
-<li>S. Mahmud, <strong>M. M. Khan</strong> and N. R. Jennings. 
-	     &#8220;<a href="https://arxiv.org/abs/2009.01625" target="_blank" rel="noopener noreferrer">
-	     On Population-Based Algorithms for Distributed Constraint Optimization Problems</a>.&#8221; In 
-		 <em>https://arxiv.org/abs/2009.01625</em>, 
-		 pages 1-50, 2020.</li>		 
-		 
-		 
-		 
-<li>    M. M. Islam, A. Debnath, T. A. Sayeed, M. M. Rahman, <strong>M. M. Khan</strong>, S. Shatabda and A. Islam. 
-	     &#8220;<a href="https://ieeexplore.ieee.org/document/8971186" target="_blank" rel="noopener noreferrer">
-	     A gray box interpretable visual debugging approach for deep sequence learning model</a>.&#8221; In 
-		 <em>Proceedings of the 2019 IEEE Region 10 Symposium (TENSYMP)</em>, 
-		 pages 825–830, 2019.</li>
-		 
-		 
-<li>    <strong>M. M. Khan</strong>, L. Tran-Thanh, S. D. Ramchurn and N. R. Jennings. 
-       &#8220;<a href="https://academic.oup.com/comjnl/article-abstract/61/11/1639/4942084" target="_blank" rel="noopener noreferrer">
-	   Speeding Up GDL-Based Message Passing Algorithms for Large-scale Dcops</a>.&#8221; <em>
-	   The Computer Journal</em>, 61(11), pages 1639-1666, 2018.: Oxford University Press.</li>
-
-
-		 
- <li>    <strong>M. M. Khan</strong>, L. Tran-Thanh and N. R. Jennings. 
-	     &#8220;<a href="https://dl.acm.org/doi/10.5555/3237383.3237937" target="_blank" rel="noopener noreferrer">
-	     A Generic Domain Pruning Technique for GDL-Based DCOP Algorithms in Cooperative Multi-Agent Systems</a>.&#8221; In 
-		 <em>Proceedings of the 17th International Conference on Autonomous Agents and MultiAgent Systems (AAMAS)</em>, 
-		 pages 1595–1603, 2018.</li>
-
- <li>    <strong>M. M. Khan</strong>, L. Tran-Thanh, W. Yeoh and N. R. Jennings. 
-	     &#8220;<a href="https://dl.acm.org/doi/10.5555/3237383.3237938" target="_blank" rel="noopener noreferrer">
-	     A Near-Optimal Node-to-Agent Mapping Heuristic for GDL-Based DCOP Algorithms in Multi-Agent Systems</a>.&#8221; In 
-		 <em>Proceedings of the 17th International Conference on Autonomous Agents and MultiAgent Systems (AAMAS)</em>, 
-		 pages 1595–1603, 2018.</li>
-
- 
- <li>    <strong>M. M. Khan</strong>,  S. D. Ramchurn, L. Tran-Thanh and N. R. Jennings. 
-	     &#8220;<a href="https://www.cs.nmsu.edu/~wyeoh/OPTMAS2016/" target="_blank" rel="noopener noreferrer">
-	     Speeding Up GDL-Based Message Passing Algorithms for Large-scale Dcops</a>.&#8221; In 
-		 <em>International Workshop on Optimization in Multi-Agent Systems  (OPTMAS’2016)</em>, 
-		 pages 1–15, 2016.</li>
-		 
-		 
- <li>    <strong>M. M. Khan</strong> and M. Mamun-or Rashid. 
-	     &#8220;<a href="https://ieeexplore.ieee.org/document/5723915" target="_blank" rel="noopener noreferrer">
-	     A Stable Clustering Method for Efficient Geographic Routing in Mobile Ad-hoc Networks</a>.&#8221; In 
-		 <em>Proceedings of the 13th International Conference on Computer and Information Technology (ICCIT),</em> 
-		 pages 539–544, 2010.</li>
-		 
-		 
- <li>    <strong>M. M. Khan</strong>, M. T. Hamid, and S. K. Uddin. 
-	     &#8220;<a href="https://ieeexplore.ieee.org/document/5723913" target="_blank" rel="noopener noreferrer">
-	     A Cyclic Quorum Based Multi-channel MAC Protocol with Layered Approach for Mobile Ad-hoc Networks</a>.&#8221; In 
-		 <em>Proceedings of the 13th International Conference on Computer and Information Technology (ICCIT),</em> 
-		 pages 527–532, 2010.</li>
-		 
-		 
-	 
-</ul>
-	  
-	  
-    	</div>
-  </div>
-</div>
-
-
-
-
-
-<!-- Container (teaching Section) <div class="lead" style="margin: 0px 0px 10px 0px;">Courses Taught</div>-->
-
-
-
-<div id="teaching" class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-3">
-  
-    </div>
-    <div class="col-sm-6">
-    <h2>Teaching</h2><br>
-		 
-		 <h4>&thinsp; &thinsp; Courses Taught</h4>
-<div style="font-size: 110%;">
-<ul>
-<li> <b>Department of Computer Science and Engineering, University of Dhaka, Bangladesh</b>
-<ul>
-<li style="margin: 0px 0px 0px 0px;">CSE 2101: Data Structures and Algorithms (Spring 2023)</li>
-<li style="margin: 0px 0px 0px 0px;">CSE 2202: Design and Analysis of Algorithms – I (Fall 2022)</li>
-<li style="margin: 0px 0px 0px 0px;">CSE 519: Neural Networks (MS, Spring 2021)</li>
-<li style="margin: 0px 0px 0px 0px;">CSE 4129: Parallel and Distributed Systems (Fall 2020)</li>
-<li style="margin: 0px 0px 0px 0px;">CSE 4101: Artificial Intelligence (Spring 2019, Spring 2020)</li>
-<li style="margin: 0px 0px 0px 0px;">CSE 535: Distributed Artificial Intelligence (MS, Fall 2019)</li>
-<li style="margin: 0px 0px 0px 0px;">CSE 4102: Compiler Design and Construction (Spring 2014)</li>
-<li style="margin: 0px 0px 0px 0px;">CSE 4201: Distributed Systems (Fall 2013)</li>
-</ul>
-</li>
-
-<li> <b> Department of Robotics and Mechatronics Engineering, University of Dhaka, Bangladesh</b>
-<ul>
-<li style="margin: 0px 0px 0px 0px;">RME 507: Multi-Agent Systems (Spring 2020) - as an adjunct faculty</li>
-</ul>
-</li>
-
-<li> <b> Department of Electrical and Computer Engineering, North South University, Bangladesh</b>
-<ul>
-<li style="margin: 0px 0px 0px 0px;">CSE 273: Theory of Computation  (Spring 2021, Fall 2021, Fall 2022, Spring 2023) - as an adjunct faculty</li>
-<li style="margin: 0px 0px 0px 0px;">CSE 425: Programming Language Concepts (Fall 2022) - as an adjunct faculty</li>
-<li style="margin: 0px 0px 0px 0px;">CSE 473: Theory of Computation  (Fall 2019) - as an adjunct faculty</li>
-<li style="margin: 0px 0px 0px 0px;">CSE 373: Software Engineering  (Summer 2019) - as an adjunct faculty</li>
-<li style="margin: 0px 0px 0px 0px;">CSE 327: Design and Analysis of Algorithms  (Summer 2019) - as an adjunct faculty</li>
-<li style="margin: 0px 0px 0px 0px;">CSE 115: Programming Language-I (Spring 2019) - as an adjunct faculty</li>
-</ul>
-</li>
-
-<li> <b>Department of Computer Science and Engineering, Ahsanullah University of Science and Technology, Bangladesh</b>
-<ul>
-<li style="margin: 0px 0px 0px 0px;">CSE 4101:  Theory of Computation (Spring 2012, Fall 2012)</li>
-</ul>
-</li>
-
-<li> <b>Department of Computer Science and Engineering, Ahsanullah University of Science and Technology, Bangladesh</b>
-<ul>
-<li style="margin: 0px 0px 0px 0px;">CSE 4101:  Theory of Computation (Spring 2012, Fall 2012)</li>
-</ul>
-</li>
-
-
-<li> <b>School of Electronics and Computer Science, University of Southampton, United Kingdom</b>
-<ul>
-<li style="margin: 0px 0px 0px 0px;">COMP 1202L: Programming-I Lab (Spring 2016) - as a teaching assistant</li>
-<li style="margin: 0px 0px 0px 0px;">COMP 1201L: Algorithmics Lab (Fall 2017) - as a teaching assistant</li>
-</ul>
-</li>
-
-
-
-
-</ul>
-</div>
-  
-  
-  
-</div>
-
-
-	  
-      
-      
-	
-
-	</div>
-  
-  
-
- 
-	
-  </div>
-</div>
-
-
-
-
-
-  
-
-
-
-<!-- Image of location/map -->
-
-<footer class="container-fluid text-center">
-  <a href="#myPage" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
-      
-
-  <p>@Sajeeb <script>document.write(localStorage.getItem("visitCount"))</script></p>
- 
-</footer>
-
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-  
-  $(window).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
-
-      var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="brand">Md Mosaddek Khan</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#grants">Grants</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#teaching">Teaching</a></li>
+                <li><a href="https://cognistorm.ai/" target="_blank">Cognistorm.AI</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="badge">Associate Professor & PI, CAIL | Founder & Lead, Cognistorm.AI</div>
+                <div class="hero-indent">
+                    <h4 class="name">Md Mosaddek Khan</h4>
+                <p class="affiliation">
+                    Department of Computer Science and Engineering<br>
+                    University of Dhaka, Bangladesh
+                </p>
+                <div class="contact-info">
+                    <span class="contact-link">
+                        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        mosaddek[at]du.ac.bd
+                    </span>
+                    <a href="http://www.mmkhansajeeb.com/" class="contact-link">
+                        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                            </path>
+                        </svg>
+                        mmkhansajeeb.com
+                    </a>
+                </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://scholar.google.com/citations?user=IIb6f_4AAAAJ&hl" target="_blank"
+                        class="btn btn-outline">Google Scholar</a>
+                    <a href="https://dblp.org/pers/k/Khan:Md=_Mosaddek.html" target="_blank"
+                        class="btn btn-outline">DBLP</a>
+                    <a href="https://cognistorm.ai/" target="_blank" class="btn btn-outline">Cognistorm.AI</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="photo.png" alt="Dr. Md Mosaddek Khan" class="hero-image">
+                <div class="hero-image-bg"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="about-content reveal">
+                    <p>I am an Associate Professor in the Department of Computer Science and Engineering at the
+                        University of Dhaka, Bangladesh, and the Principal Investigator of the Cognitive Agents and
+                        Interaction Lab (CAIL). Within CAIL, I founded and lead <strong><a href="https://cognistorm.ai/"
+                                target="_blank" style="color: inherit">CognistormAI</a></strong>, an
+                        AI-focused research and development initiative that supports the translation of academic
+                        research into practical, deployable solutions for real-world applications.</p>
+                    <p>I received my PhD in Computer Science from the University of Southampton, UK, in 2018, under the
+                        supervision of Prof. Nick Jennings CB, FREng and Prof. Long Tran-Thanh. Prior to that, I
+                        completed my MS and BSc degrees in Computer Science and Engineering from the University of Dhaka
+                        in 2012 and 2010, respectively.</p>
+                    <p>My research lies broadly in Artificial Intelligence, with particular interests in
+                        Multi-Agent Systems, Generative AI Applications, Graph Neural Networks, and Multi-Agent
+                        Deep Reinforcement Learning. I focus on distributed decision-making, intelligent
+                        agent coordination, and the development of deployable AI systems that integrate generative AI,
+                        deep learning, and data-driven methodologies.
+                    </p>
+                    <p>My work is largely application-agnostic, with an emphasis on building AI methods and systems that
+                        can be adapted across different real-world settings. A major focus of my recent work is the
+                        development of AI applications for on-premises deployment in low-resource environments, where
+                        solutions must be computationally efficient, affordable, privacy-aware, and adaptable to local
+                        institutional needs. Through my academic research and applied R&D activities, I aim to build
+                        practical, accessible, and sustainable AI-enabled systems for institutions with limited
+                        computational and infrastructural resources.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- [News Section Commented Out]
+        <section id="news" class="section section-light">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">Recent News</h2>
+                    <span class="section-subtitle">Last Updated: May 2026</span>
+                    <div class="section-line"></div>
+                </div>
+                <div class="news-timeline">
+                    <div class="news-item reveal">
+                        <div class="news-date">2026</div>
+                        <div class="news-text">Received <strong>ICSETEP Research and Development Grant</strong> (BDT
+                            12M) funded by the Asian Development Bank (ADB).</div>
+                    </div>
+                    <div class="news-item reveal">
+                        <div class="news-date">2026</div>
+                        <div class="news-text">Paper "<em>CodeStream: A Dataset of Iterative Programming
+                                Submissions</em>" published in <strong>Data in Brief</strong>.</div>
+                    </div>
+                    <div class="news-item reveal">
+                        <div class="news-date">2026</div>
+                        <div class="news-text">Paper "<em>FinBERT-BiLSTM: A Deep Learning Model for Predicting Volatile
+                                Cryptocurrency Market Prices</em>" published in <strong>Applied Intelligence</strong>.
+                        </div>
+                    </div>
+                    <div class="news-item reveal">
+                        <div class="news-date">2025</div>
+                        <div class="news-text">Paper "<em>Who Holds the Pen? Caricature and Perspective in LLM
+                                Retellings of History</em>" accepted to <strong>EMNLP 2025</strong>.</div>
+                    </div>
+                    <div class="news-item reveal">
+                        <div class="news-date">2025</div>
+                        <div class="news-text">Paper "<em>Learning Heterogeneous Agent Collaboration in Decentralized
+                                Multi-Agent Systems via Intrinsic Motivation</em>" accepted to <strong>AAMAS
+                                2025</strong>.</div>
+                    </div>
+                    <div class="news-item reveal">
+                        <div class="news-date">2023</div>
+                        <div class="news-text">Received <strong>BANBAIS Grant for Advanced Research</strong> (BDT 2.5M)
+                            for integrating Generative AI and GNNs in Patient Care.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        -->
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">Experience</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="teaching-grid">
+                    <div class="teaching-card reveal" style="grid-column: span 2;">
+                        <ul class="course-list">
+                            <li>
+                                <div class="list-content">
+                                    <div class="list-title">Associate Professor</div>
+                                    <div class="list-subtitle">Department of Computer Science and Engineering,
+                                        University of Dhaka, Bangladesh</div>
+                                </div>
+                                <span class="badge-date">Jul 2022 - Present</span>
+                            </li>
+                            <li>
+                                <div class="list-content">
+                                    <div class="list-title">Principal Investigator and Director</div>
+                                    <div class="list-subtitle">Cognitive Agents and Interaction Lab (CAIL), University
+                                        of Dhaka, Bangladesh</div>
+                                </div>
+                                <span class="badge-date">Mar 2020 - Present</span>
+                            </li>
+                            <li>
+                                <div class="list-content">
+                                    <div class="list-title">Founder and Lead</div>
+                                    <div class="list-subtitle">Cognistorm.AI (R&D Startup)</div>
+                                </div>
+                                <span class="badge-date">Aug 2024 - Present</span>
+                            </li>
+                            <li>
+                                <div class="list-content">
+                                    <div class="list-title">Visiting Research Fellow</div>
+                                    <div class="list-subtitle">INTI International University, Malaysia</div>
+                                </div>
+                                <span class="badge-date">Aug 2024 - Dec 2025</span>
+                            </li>
+                            <li>
+                                <div class="list-content">
+                                    <div class="list-title">Student Advisor</div>
+                                    <div class="list-subtitle">Department of Computer Science and Engineering,
+                                        University of Dhaka, Bangladesh</div>
+                                </div>
+                                <span class="badge-date">Aug 2021 - Nov 2024</span>
+                            </li>
+                            <li>
+                                <div class="list-content">
+                                    <div class="list-title">Assistant Professor</div>
+                                    <div class="list-subtitle">Department of Computer Science and Engineering,
+                                        University of Dhaka, Bangladesh</div>
+                                </div>
+                                <span class="badge-date">Apr 2019 - Jul 2022</span>
+                            </li>
+                            <li>
+                                <div class="list-content">
+                                    <div class="list-title">Lecturer</div>
+                                    <div class="list-subtitle">Department of Computer Science and Engineering,
+                                        University of Dhaka, Bangladesh</div>
+                                </div>
+                                <span class="badge-date">Feb 2013 - Apr 2019</span>
+                            </li>
+                            <li>
+                                <div class="list-content">
+                                    <div class="list-title">Post-Doctoral Researcher</div>
+                                    <div class="list-subtitle">Agents, Interaction and Complexity (AIC) Research Lab,
+                                        University of Southampton, UK</div>
+                                </div>
+                                <span class="badge-date">Apr 2018 - Jul 2018</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grants Section -->
+        <section id="grants" class="section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">Awards and Grants</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="teaching-grid">
+                    <div class="teaching-card reveal" style="grid-column: span 2;">
+                        <ul class="course-list">
+                            <li>
+                                <div class="list-content">
+                                    <div class="list-title">ICSETEP Research and Development Grant, ADB (PI, BDT 12M)
+                                    </div>
+                                    <div class="list-subtitle">Project: RAG-Driven Business Intelligence Platform
+                                        Integrating Enterprise Data</div>
+                                </div>
+                                <span class="badge-date">2026 - Present</span>
+                            </li>
+                            <li>
+                                <div class="list-content">
+                                    <div class="list-title">BANBAIS Grant for Advanced Research (PI, BDT 2.5M)</div>
+                                    <div class="list-subtitle">Project: Integrating Generative AI and Graph Neural
+                                        Networks in Enhancing Decision Making in Patient Care</div>
+                                </div>
+                                <span class="badge-date">2023 - 2025</span>
+                            </li>
+                            <li>
+                                <div class="list-content">
+                                    <div class="list-title">ICT Division Innovation Grant (Co-Investigator, BDT 800K)
+                                    </div>
+                                    <div class="list-subtitle">Project: Multi-Agent Deep Reinforcement Learning for Zero
+                                        Energy Communities</div>
+                                </div>
+                                <span class="badge-date">2021 - 2022</span>
+                            </li>
+                            <li>
+                                <div class="list-content">
+                                    <div class="list-title">ICT Division Innovation Grant (PI, BDT 1.5M)</div>
+                                    <div class="list-subtitle">Project: Applying Multi-Agent Deep Reinforcement Learning
+                                        Algorithms for Automated Warehouse Systems</div>
+                                </div>
+                                <span class="badge-date">2021 - 2022</span>
+                            </li>
+                            <li>
+                                <div class="list-content">
+                                    <div class="list-title">DU Centennial Research Grant (PI, BDT 740K)</div>
+                                    <div class="list-subtitle">Project: Causal Inference and Recommender Systems</div>
+                                </div>
+                                <span class="badge-date">2021 - 2022</span>
+                            </li>
+                            <li>
+                                <div class="list-content">
+                                    <div class="list-title">ICT Division Innovation Grant (PI, BDT 500K)</div>
+                                    <div class="list-subtitle">Project: A Game Theoretic Approach of Intelligent
+                                        Security Resource Allocation</div>
+                                </div>
+                                <span class="badge-date">2020 - 2021</span>
+                            </li>
+                            <li>
+                                <div class="list-content">
+                                    <div class="list-title">ICT Division Innovation Grant (Co-Investigator, BDT 1.3M)
+                                    </div>
+                                    <div class="list-subtitle">Project: Mind Flare - Artificially Intelligent Assistant
+                                        for Improving Mental Health</div>
+                                </div>
+                                <span class="badge-date">2020 - 2021</span>
+                            </li>
+                            <li>
+                                <div class="list-content">
+                                    <div class="list-title">UGC Research Grant (PI, BDT 300K)</div>
+                                    <div class="list-subtitle">Project: AI in Disaster Response: Dealing Natural
+                                        Calamities using Multi-Agent Coordination Algorithms</div>
+                                </div>
+                                <span class="badge-date">2019 - 2020</span>
+                            </li>
+                            <li>
+                                <div class="list-content">
+                                    <div class="list-title">DU-UGC Research Grant (PI, BDT 120K)</div>
+                                    <div class="list-subtitle">Project: Deploying Distributed Constraint Optimization
+                                        Algorithms in Large-Scale Disaster Response Operation</div>
+                                </div>
+                                <span class="badge-date">2018 - 2019</span>
+                            </li>
+                            <li>
+                                <div class="list-content">
+                                    <div class="list-title">Conference Travel Grant (AAMAS 2018)</div>
+                                    <div class="list-subtitle">Attended 17th International Conference on Autonomous
+                                        Agents and Multi-Agent Systems in Stockholm, Sweden</div>
+                                </div>
+                                <span class="badge-date">2018</span>
+                            </li>
+                            <li>
+                                <div class="list-content">
+                                    <div class="list-title">PhD Scholarship, University of Southampton</div>
+                                    <div class="list-subtitle">ECS studentship award funded by Higher Education Funding
+                                        Council for England (HEFCE)</div>
+                                </div>
+                                <span class="badge-date">2014 - 2018</span>
+                            </li>
+                            <!-- [Older Scholarships Commented Out]
+                            <li>
+                                <div class="list-content">
+                                    <div class="list-title">Undergraduate Scholarship, University of Dhaka</div>
+                                    <div class="list-subtitle">Scholarship for Bachelor of Science (BSc) result</div>
+                                </div>
+                                <span class="badge-date">2010</span>
+                            </li>
+                            <li>
+                                <div class="list-content">
+                                    <div class="list-title">Board Scholarship, Dhaka Board</div>
+                                    <div class="list-subtitle">Scholarship for Higher Secondary Certificate (HSC)
+                                        examination result</div>
+                                </div>
+                                <span class="badge-date">2004</span>
+                            </li>
+                            <li>
+                                <div class="list-content">
+                                    <div class="list-title">Junior School Scholarship, Rajshahi Board</div>
+                                    <div class="list-subtitle">Scholarship examination at Class-VIII</div>
+                                </div>
+                                <span class="badge-date">2000</span>
+                            </li>
+                            -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">Publications</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <h3 class="subsection-title">Dissertation</h3>
+                <div class="pub-card reveal">
+                    <div class="pub-content">
+                        <div class="pub-authors"><strong>Md. Mosaddek Khan</strong>.</div>
+                        <div class="pub-title">"<a href="https://eprints.soton.ac.uk/421047/" target="_blank"
+                                rel="noopener noreferrer">Speeding Up GDL-Based Distributed Constraint Optimization
+                                Algorithms in Cooperative Multi-agent Systems</a>."</div>
+                        <div class="pub-venue">PhD Thesis, University of Southampton, United Kingdom 2018.</div>
+                        <div class="pub-notes">Supervisors: <a
+                                href="https://www.lboro.ac.uk/services/vco/smt/vc-prof-jennings/"
+                                target="_blank">Professor Nicholas R. Jennings CB, FREng</a> and <a
+                                href="https://human-agentlearning.github.io/" target="_blank">Prof. Long Tran-Thanh</a>.
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title">Research Articles <span class="section-subtitle">(Last Updated: May,
+                        2026)</span></h3>
+
+                <div class="pub-list">
+                    <div class="pub-card reveal">
+                        <div class="pub-content">
+                            <div class="pub-authors">Lina, NJ and Mahmud, SM and Hasan, M and Arefin, MF and Rizvee, RA
+                                and Rahman, MM and others</div>
+                            <div class="pub-title">CodeStream: A Dataset of Iterative Programming Submissions with
+                                Sequential Verdict Traces and Attempt Histories</div>
+                            <div class="pub-venue">In <em>Data in Brief</em>, 2026.</div>
+                        </div>
+                    </div>
+                    <div class="pub-card reveal">
+                        <div class="pub-content">
+                            <div class="pub-authors">Miraj, MA and Radi, AMA and Rayhan, SI and Alam, MT and Rahman, I
+                                and Tian, Y and Khan, MM</div>
+                            <div class="pub-title">CATS: Curvature Aware Temporal Selection for efficient long video
+                                understanding</div>
+                            <div class="pub-venue">In <em>arXiv preprint arXiv:2605.09223</em>, 2026.</div>
+                        </div>
+                    </div>
+                    <div class="pub-card reveal">
+                        <div class="pub-content">
+                            <div class="pub-authors">Mahmud, SM and Noki, MMH and Majumder, PS and Radi, AMA and Ali, MH
+                                and Khan, MM</div>
+                            <div class="pub-title">From Attention to Frequency: Integration of Vision Transformer and
+                                FFT-ReLU for Enhanced Image Deblurring</div>
+                            <div class="pub-venue">In <em>Proceedings of the 18th International Conference on Agents and
+                                    Artificial Intelligence</em>, 2026.</div>
+                        </div>
+                    </div>
+                    <div class="pub-card reveal">
+                        <div class="pub-content">
+                            <div class="pub-authors">Hossain, MFB and Lamia, LZ and Rahman, MM and Khan, MM</div>
+                            <div class="pub-title">FinBERT-BiLSTM: A Deep Learning Model for Predicting Volatile
+                                Cryptocurrency Market Prices Using Market Sentiment Dynamics</div>
+                            <div class="pub-venue">In <em>Applied Intelligence</em>, 2026.</div>
+                        </div>
+                    </div>
+                    <div class="pub-card reveal">
+                        <div class="pub-content">
+                            <div class="pub-authors">Hossain, N and Thaki, A Al and Mamun-or-Rashid, M and Khan, MM
+                            </div>
+                            <div class="pub-title">Graph Contrastive Learning: A Comprehensive Review of Methodologies,
+                                Applications, and Future Directions</div>
+                            <div class="pub-venue">In <em>IEEE Access</em>, 2026.</div>
+                        </div>
+                    </div>
+                    <div class="pub-card reveal">
+                        <div class="pub-content">
+                            <div class="pub-authors">Lamia, L. Z. and Hossain, M. F. D. and <strong>M. M. Khan</strong>
+                            </div>
+                            <div class="pub-title">Who Holds the Pen? Caricature and Perspective in LLM Retellings of
+                                History</div>
+                            <div class="pub-venue">In <em>Proceedings of the 2025 Conference on Empirical Methods in
+                                    Natural Language Processing (EMNLP)</em>, 2025.</div>
+                        </div>
+                    </div>
+                    <div class="pub-card reveal">
+                        <div class="pub-content">
+                            <div class="pub-authors">Hasan, MM and Choudhury, ANT and Hasan, M and Khan, MM</div>
+                            <div class="pub-title">GraDeT-HTR: A Resource-Efficient Bengali Handwritten Text Recognition
+                                System utilizing Grapheme-based Tokenizer and Decoder-only Transformer</div>
+                            <div class="pub-venue">In <em>Proceedings of the 2025 Conference on Empirical Methods in
+                                    Natural Language Processing (EMNLP)</em>, 2025.</div>
+                        </div>
+                    </div>
+                    <div class="pub-card reveal">
+                        <div class="pub-content">
+                            <div class="pub-authors">Alam, MT and Alam, MA and Rahman, MM and Khan, MM</div>
+                            <div class="pub-title">Rel-HNN: Split Parallel Hypergraph Neural Network for Learning on
+                                Relational Databases</div>
+                            <div class="pub-venue">In <em>Transactions on Machine Learning Research (TMLR)</em>, 2025.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pub-card reveal">
+                        <div class="pub-content">
+                            <div class="pub-authors">Alam, Md Ahasanul and Mahmud, Shekhar and Mamun-Or-Rashid, Md and
+                                <strong>M. M. Khan</strong>
+                            </div>
+                            <div class="pub-title">Optimizing Node Selection in Search Based Multi-Agent Path Finding
+                            </div>
+                            <div class="pub-venue">In <em>Autonomous Agents and Multi-Agent Systems</em>, 2025.</div>
+                        </div>
+                    </div>
+                    <div class="pub-card reveal">
+                        <div class="pub-content">
+                            <div class="pub-authors">Monon, J. S. and Barua, D. D. and <strong>M. M. Khan</strong></div>
+                            <div class="pub-title">Learning Heterogeneous Agent Collaboration in Decentralized
+                                Multi-Agent Systems via Intrinsic Motivation</div>
+                            <div class="pub-venue">In <em>Proceedings of the 24th International Conference on Autonomous
+                                    Agents and Multi-Agent Systems (AAMAS)</em>, 2025.</div>
+                        </div>
+                    </div>
+                    <div class="pub-card reveal">
+                        <div class="pub-content">
+                            <div class="pub-authors">Radi, A.M. A. and Majumder, P. S. and <strong>M. M. Khan</strong>
+                            </div>
+                            <div class="pub-title">Blind Image Deblurring with FFT-ReLU Sparsity Prior</div>
+                            <div class="pub-venue">In <em>IEEE/CVF Winter Conference on Applications of Computer Vision
+                                    (WACV)</em>, 2025.</div>
+                        </div>
+                    </div>
+                    <div class="pub-card reveal">
+                        <div class="pub-content">
+                            <div class="pub-authors">Hasan, R. and Wadith, K. S. and Rashid M. M. and <strong>M. M.
+                                    Khan</strong></div>
+                            <div class="pub-title">DePAint: a decentralized safe multi-agent reinforcement learning
+                                algorithm considering peak and average constraints.</div>
+                            <div class="pub-venue">In <em>Applied Intelligence</em>, 2024.</div>
+                        </div>
+                    </div>
+                    <div class="pub-card reveal">
+                        <div class="pub-content">
+                            <div class="pub-authors"> Rizvee, R. A. and Hasan, R. and <strong>M. M. Khan</strong></div>
+                            <div class="pub-title">Reinforcement Learning Based Formulations with Hamiltonian-Inspired
+                                Loss Functions for Combinatorial Optimization over Graphs</div>
+                            <div class="pub-venue">In <em>IEEE Access</em>, 2023.</div>
+                        </div>
+                    </div>
+                    <div class="pub-card reveal">
+                        <div class="pub-content">
+                            <div class="pub-authors">Choudhury, M. and Sarker, A. and Yaser, S. and Khan, M. M. A. A.
+                                and Yeoh, W. and <strong>M. M. Khan</strong></div>
+                            <div class="pub-title">A Particle Swarm Inspired Approach for Continuous Distributed
+                                Constraint Optimization Problems</div>
+                            <div class="pub-venue">In <em>Engineering Applications of Artificial Intelligence,
+                                    Elsevier</em>, 2024.</div>
+                        </div>
+                    </div>
+                    <div class="pub-card reveal">
+                        <div class="pub-content">
+                            <div class="pub-authors"> Zaoad, S. A. and Rashid, M.M. and <strong>M. M. Khan</strong>
+                            </div>
+                            <div class="pub-title">CrowdSPaFE: A Crowd-sourced Multimodal Recommendation System for
+                                Urban Route Safety</div>
+                            <div class="pub-venue">In <em>IEEE Access</em>, 2023.</div>
+                        </div>
+                    </div>
+                    <div class="pub-card reveal">
+                        <div class="pub-content">
+                            <div class="pub-authors"></div>
+                            <div class="pub-title">Comprehensive First-Principles Modeling of Experimentally Synthesized
+                                BiPO4 Polymorphs</div>
+                            <div class="pub-venue">In <em>The Journal of Physical Chemistry C</em>, 2024.</div>
+                        </div>
+                    </div>
+                    <div class="pub-card reveal">
+                        <div class="pub-content">
+                            <div class="pub-authors">Hossain, M. Z. and Nishat, S. S. and Ahmed, S. and Hossain, Q. S.
+                                and Khan, M.N.I. and Hasan, T. and Bashar, M. S. and Faysal, AKM S. H. and Syed, I. M.
+                                and Hossain, K. Saadat and Hossain, S. and <strong>M. M. Khan</strong> and Ahmed, I.
+                            </div>
+                            <div class="pub-title">Combined experimental and DFT approach to BiNbO 4 polymorphs</div>
+                            <div class="pub-venue">In <em>RSC advances</em>, 2023.</div>
+                        </div>
+                    </div>
+                    <div class="pub-card reveal">
+                        <div class="pub-content">
+                            <div class="pub-authors">Mahmud, R. A. and Faisal, F. and Mahmud, S. and <strong>M. M.
+                                    Khan</strong></div>
+                            <div class="pub-title">A Simulation Based Online Planning Algorithm for Multi-Agent
+                                Cooperative Environments</div>
+                            <div class="pub-venue">In <em>Proceedings of the 21st International Conference on Autonomous
+                                    Agents and Multi-Agent Systems (AAMAS)</em>, 2022.</div>
+                        </div>
+                    </div>
+                    <div class="pub-card reveal">
+                        <div class="pub-content">
+                            <div class="pub-authors">Rahman, M. and Alam, M. A. and Islam, M. M. and Rahman, I. and
+                                <strong>M. M. Khan</strong> and Iqbal, T.
+                            </div>
+                            <div class="pub-title">An Adaptive Agent Specific Sub-optimal Bounding Approach for
+                                Multi-Agent Path Finding</div>
+                            <div class="pub-venue">In <em>IEEE Access</em>, 2022.</div>
+                        </div>
+                    </div>
+                    <div class="pub-card reveal">
+                        <div class="pub-content">
+                            <div class="pub-authors">Hossain, E. and Karim, M. R. and Hasan, M. and Zaoad, S. A. and
+                                Tanjim, T. and <strong>M. M. Khan</strong></div>
+                            <div class="pub-title">SPaFE: A Crowdsourcing and Multimodal Recommender System to Ensure
+                                Travel Safety in a City</div>
+                            <div class="pub-venue">In <em>IEEE Access</em>, 2022.</div>
+                        </div>
+                    </div>
+                    <div class="pub-card reveal">
+                        <div class="pub-content">
+                            <div class="pub-authors">Hasan, D. T. and and <strong>M. M. Khan</strong> and Ibrahim, M.
+                                and Almansour, I. </div>
+                            <div class="pub-title">On Evaluation of Patrolling and Signalling Schemes to Prevent
+                                Poaching in Green Security Games</div>
+                            <div class="pub-venue">In <em>Intelligent Systems with Applications</em>, 2022.</div>
+                        </div>
+                    </div>
+                    <div class="pub-card reveal">
+                        <div class="pub-content">
+                            <div class="pub-authors">Rahman, M. M. and Rasheed, A. and <strong>M. M. Khan</strong> and
+                                Javidian, M. A. and Jamshidi, P. and Mamun-Or-Rashid, M.</div>
+                            <div class="pub-title">Accelerating Recursive Partition-Based Causal Structure Learning
+                                Using An Improved Structure Refinement Approach</div>
+                            <div class="pub-venue">In <em>Proceedings of the 20th International Conference on Autonomous
+                                    Agents and Multi-Agent Systems (AAMAS)</em>, 2021.</div>
+                        </div>
+                    </div>
+                    <div class="pub-card reveal">
+                        <div class="pub-content">
+                            <div class="pub-authors">Sarker, A. and Choudhury, M. and <strong>M. M. Khan</strong> </div>
+                            <div class="pub-title">A Local Search Based Approach to Solve Continuous DCOPs</div>
+                            <div class="pub-venue">In <em>Proceedings of the 20th International Conference on Autonomous
+                                    Agents and Multi-Agent Systems (AAMAS)</em>, 2021.</div>
+                        </div>
+                    </div>
+                    <div class="pub-card reveal">
+                        <div class="pub-content">
+                            <div class="pub-authors">Rashik, M. and Rahman, M. M and <strong>M. M. Khan</strong> and
+                                Mamun-or-Rashid, M. and Tran-Thanh, L. and Jennings, N. R. </div>
+                            <div class="pub-title">Speeding Up Distributed Pseudo-tree Optimization Procedure with Cross
+                                Edge Consistency to Solve DCOPs</div>
+                            <div class="pub-venue">In <em>Applied Intelligence</em>, 2021.</div>
+                        </div>
+                    </div>
+                    <div class="pub-card reveal">
+                        <div class="pub-content">
+                            <div class="pub-authors">Zaoad, S. A. and Tanjim, T. and Hasan, M. and Mamun-or-Rashid, M.
+                                and Almansour, A. and <strong>M. M. Khan</strong> </div>
+                            <div class="pub-title">Accelerating Message Passing Operation of GDL-Based Constraint
+                                Optimization Algorithms Using Multiprocessing</div>
+                            <div class="pub-venue">In <em>Proceedings of the IEEE International Conference on Parallel &
+                                    Distributed Processing with Applications</em>, 2021.</div>
+                        </div </div>
+                        <div class="pub-card reveal">
+                            <div class="pub-content">
+                                <div class="pub-authors">Mahmud, S. and <strong>M. M. Khan</strong> and Jennings, N. R.
+                                </div>
+                                <div class="pub-title">On Population-Based Algorithms for DistributedConstraint
+                                    Optimization
+                                    Problems</div>
+                                <div class="pub-venue">In <em>https://arxiv.org/abs/2009.01625</em>, 2020.</div>
+                            </div>
+                        </div>
+                        <div class="pub-card reveal">
+                            <div class="pub-content">
+                                <div class="pub-authors">Mahmud, S. and <strong>M. M. Khan</strong> and Choudhury, M.
+                                    and
+                                    Tran-Thanh, L. and Jennings, N. R. </div>
+                                <div class="pub-title">Learning Optimal Temperature Region for Solving Mixed Integer
+                                    Functional DCOPs</div>
+                                <div class="pub-venue">In <em>Proceedings of the 29th International Joint Conference on
+                                        Artificial Intelligence (IJCAI)</em>, 2020.</div>
+                            </div>
+                        </div>
+                        <div class="pub-card reveal">
+                            <div class="pub-content">
+                                <div class="pub-authors">Choudhury, M. and Mahmud, S. and <strong>M. M. Khan</strong>
+                                </div>
+                                <div class="pub-title">A Particle Swarm Based Algorithm for Functional Distributed
+                                    Constraint Optimization Problems</div>
+                                <div class="pub-venue">In <em>Thirty-Fourth AAAI Conference on Artificial
+                                        Intelligence</em>,
+                                    2020.</div>
+                            </div>
+                        </div>
+                        <div class="pub-card reveal">
+                            <div class="pub-content">
+                                <div class="pub-authors">Mahmud, S. and Choudhury, M. and <strong>M. M. Khan</strong>
+                                    and
+                                    and Tran-Thanh, L. and Jennings, N. R. </div>
+                                <div class="pub-title">AED: An Anytime Evolutionary DCOP Algorithm</div>
+                                <div class="pub-venue">In <em>Proceedings of the 19th International Conference on
+                                        Autonomous
+                                        Agents and Multi-Agent Systems (AAMAS)</em>, 2020.</div>
+                            </div>
+                        </div>
+                        <div class="pub-card reveal">
+                            <div class="pub-content">
+                                <div class="pub-authors">Sarker, A. and Arif, A. B. and Choudhury, M. and <strong>M. M.
+                                        Khan</strong></div>
+                                <div class="pub-title">C-CoCoA: A Continuous Cooperative Constraint Approximation
+                                    Algorithm
+                                    to Solve Functional DCOPs</div>
+                                <div class="pub-venue">In <em>Proceedings of the 19th International Conference on
+                                        Autonomous
+                                        Agents and Multi-Agent Systems (AAMAS Extended Abstract)</em>, 2020.</div>
+                            </div>
+                        </div>
+                        <div class="pub-card reveal">
+                            <div class="pub-content">
+                                <div class="pub-authors">M. M. Islam and A. Debnath and T. A. Sayeed and M. M. Rahman
+                                    and
+                                    <strong>M. M. Khan</strong> and S. Shatabda and A. Islam
+                                </div>
+                                <div class="pub-title">A gray box interpretable visual debugging approach for deep
+                                    sequence learning model</div>
+                                <div class="pub-venue">In <em>2019 IEEE Region 10 Symposium (TENSYMP)</em>, 2019.</div>
+                            </div>
+                        </div>
+                        <div class="pub-card reveal">
+                            <div class="pub-content">
+                                <div class="pub-authors"><strong>M. M. Khan</strong> and Tran-Thanh, L. and Ramchurn, S.
+                                    D.
+                                    and Jennings, N. R.</div>
+                                <div class="pub-title">Speeding up gdl-based message passing algorithms for large-scale
+                                    dcops</div>
+                                <div class="pub-venue">In <em>The Computer Journal</em>, 2018. Oxford University Press.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pub-card reveal">
+                            <div class="pub-content">
+                                <div class="pub-authors"><strong>M. M. Khan</strong> and Tran-Thanh, L. and Jennings, N.
+                                    R.
+                                </div>
+                                <div class="pub-title">A generic domain pruning technique for gdl-based dcop algorithms
+                                    in
+                                    cooperative multi-agent systems</div>
+                                <div class="pub-venue">In <em>Proceedings of the 17th International Conference on
+                                        Autonomous
+                                        Agents and Multi-Agent Systems (AAMAS)</em>, 2018.</div>
+                            </div>
+                        </div>
+                        <div class="pub-card reveal">
+                            <div class="pub-content">
+                                <div class="pub-authors"><strong>M. M. Khan</strong> and Tran-Thanh, L. and Yeoh, W. and
+                                    Jennings, N. R.</div>
+                                <div class="pub-title">A near-optimal node-to-agent mapping heuristic for gdl-based dcop
+                                    algorithms in multi-agent systems</div>
+                                <div class="pub-venue">In <em>Proceedings of the 17th International Conference on
+                                        Autonomous
+                                        Agents and Multi-Agent Systems (AAMAS)</em>, 2018.</div>
+                            </div>
+                        </div>
+                        <div class="pub-card reveal">
+                            <div class="pub-content">
+                                <div class="pub-authors">Radi, Abdul Mohaimen Al and Majumder, Prothito Shovon and
+                                    Mahmud,
+                                    Syed Mumtahin and Noki, Mahdi Mohd Hossain and Ali, Md Haider and <strong>M. M.
+                                        Khan</strong></div>
+                                <div class="pub-title">Blind Image Deblurring using FFT-ReLU with Deep Learning Pipeline
+                                    Integration</div>
+                                <div class="pub-venue">In <em>arXiv preprint arXiv:2406.08344</em>, 2024.</div>
+                            </div>
+                        </div>
+                        <div class="pub-card reveal">
+                            <div class="pub-content">
+                                <div class="pub-authors">Mridul, Mohidul Haque and Khan, Mohammad Foysal and Rizvee,
+                                    Redwan
+                                    Ahmed and <strong>M. M. Khan</strong></div>
+                                <div class="pub-title">Adaptive Opponent Policy Detection in Multi-Agent MDPs: Real-Time
+                                    Strategy Switch Identification Using Running Error Estimation</div>
+                                <div class="pub-venue">In <em>arXiv preprint arXiv:2406.06500</em>, 2024.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Teaching Section -->
+        <section id="teaching" class="section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">Courses Taught</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="teaching-grid">
+                    <div class="teaching-card reveal" style="grid-column: span 2;">
+                        <ul class="course-list">
+                            <li>
+                                <div class="list-title">Artificial Intelligence</div>
+                            </li>
+                            <li>
+                                <div class="list-title">Distributed Artificial Intelligence</div>
+                            </li>
+                            <li>
+                                <div class="list-title">Deep Neural Networks</div>
+                            </li>
+                            <li>
+                                <div class="list-title">Theory of Computation</div>
+                            </li>
+                            <li>
+                                <div class="list-title">Distributed Systems</div>
+                            </li>
+                            <li>
+                                <div class="list-title">Compiler Design and Construction</div>
+                            </li>
+                            <li>
+                                <div class="list-title">Software Engineering</div>
+                            </li>
+                            <li>
+                                <div class="list-title">Programming Language Concepts</div>
+                            </li>
+                            <li>
+                                <div class="list-title">Data Structure and Algorithms</div>
+                            </li>
+                            <li>
+                                <div class="list-title">Structured Programming</div>
+                            </li>
+                            <li>
+                                <div class="list-title">Microcontroller Based System Design</div>
+                            </li>
+                            <li>
+                                <div class="list-title">Design and Analysis of Algorithms</div>
+                            </li>
+                            <li>
+                                <div class="list-title">Operating Systems</div>
+                            </li>
+                            <li>
+                                <div class="list-title">Computer Fundamentals</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Md Mosaddek Khan. All rights reserved.</p>
+            <p class="visitor-count">Visits: <span id="visit-counter">...</span></p>
+            <a href="#home" class="back-to-top" aria-label="Back to top">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Visit Counter
+        if (localStorage.getItem("visitCount")) {
+            var visitCount = parseInt(localStorage.getItem("visitCount")) + 1;
+            localStorage.setItem("visitCount", visitCount);
+        } else {
+            localStorage.setItem("visitCount", 1);
         }
-    });
-  });
-})
-</script>
+        document.getElementById('visit-counter').innerText = localStorage.getItem("visitCount");
 
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // Navbar Scroll Effect & Smooth Scrolling
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        // Scroll Reveal Animation Observer
+        const revealElements = document.querySelectorAll('.reveal');
+
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            root: null,
+            threshold: 0.15,
+            rootMargin: "0px 0px -50px 0px"
+        });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+    </script>
 </body>
+
 </html>
